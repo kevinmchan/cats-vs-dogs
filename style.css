@@ -1,0 +1,29 @@
+body {
+    background-color: #001f3f;
+    color: #7FDBFF;
+    font-family: 'Annie Use Your Telescope';
+}
+
+.cat-text {
+    color: #FFDC00;
+}
+
+.dog-text {
+    color: #FFDC00;
+}
+
+.custom-file-input {
+    content: 'Select some files';
+}
+
+#img-upload {
+    padding: 10px;
+}
+
+#input-group {
+    padding: 20px;
+}
+
+.result-text {
+    color: #FFDC00
+}

@@ -1,0 +1,15 @@
+{
+  "name": "cats-vs-dogs",
+  "version": "0.0.1",
+  "description": "Are you a cat or a dog person?",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
