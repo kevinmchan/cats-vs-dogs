@@ -1,4 +1,4 @@
-const MOBILENET_MODEL_PATH = "https://datasciencediag435.blob.core.windows.net/cat-vs-dog/model.json";
+const MOBILENET_MODEL_PATH = "./model/model.json";
 const IMAGE_SIZE = 224;
 let mobilenet;
 
