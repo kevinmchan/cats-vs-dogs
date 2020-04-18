@@ -26,14 +26,14 @@ async function predict(imgElement) {
     let prediction = mobilenet.predict(batched);
     return prediction;
   });
-
-  cat_prob = prediction.dataSync()[0];
+  console.log(`prediction: ${prediction}`)
+  probabilities = prediction.dataSync(); // [dog, cat]
   const result = document.getElementById("result");
-  if (cat_prob >= 0.5) {
-    display_prob = (cat_prob * 100).toFixed();
+  if (probabilities[1] >= probabilities[0]) {
+    display_prob = ((probabilities[1] / (probabilities[1] + probabilities[0])) * 100).toFixed();
     category = "cat";
   } else {
-    display_prob = ((1 - cat_prob) * 100).toFixed();
+    display_prob = ((probabilities[0] / (probabilities[1] + probabilities[0])) * 100).toFixed();
     category = "dog";
   }
   text = `I'm <span class="result-text">${display_prob}%</span> confident you're a <span class="result-text">${category}</span>...person`;
