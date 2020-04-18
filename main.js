@@ -13,9 +13,7 @@ async function load_model() {
   form.style.display = ""
 
   const result = document.getElementById("result");
-  result.innerText = "Let's find out what kind of pet person are you...";
-  
-
+  result.innerText = "Okay, let's find out what you look like...";
 };
 
 async function predict(imgElement) {
