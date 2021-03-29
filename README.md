@@ -2,6 +2,8 @@
 
 An exploration of transfer learning, using a pre-trained mobilenet to learn a cat vs dog image classifier. Given mobilenet's compact size, we can also serve our model as a static webpage using tensorflowjs.
 
+Try the model at https://catdog.azureedge.net/
+
 ## Setup
 
 Create conda environment used for model build.
@@ -41,8 +43,3 @@ tensorflowjs_converter --input_format=keras ./model/cat_dog_mobilenet_pooled_fin
 ```bash
 npm run start
 ```
-
-
-## Test model
-
-https://catdog.azureedge.net/
